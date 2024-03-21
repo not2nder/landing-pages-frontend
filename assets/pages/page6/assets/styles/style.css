@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.main {
+    font-family: "Playfair Display";
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    width: 1440px;
+    height: 933px;
+}
+
+.cols {
+    display: flex;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 84px;
+}
+
+p {
+    font-family: "Work Sans";
+    font-size: 24px;
+}
+
+h1::selection, p::selection {
+    background-color: #252525;
+    color: white;
+}
+
+.left {
+    width: 653px;
+}
+
+.right {
+    margin-left: 60px;
+}
+
+.photos {
+    position: relative;
+}
+
+.smart {
+    border-radius: 10%;
+    position: absolute;
+
+    left: 50%;
+    right: 400px;
+    top: 50%;
+    margin-top: -350px;
+    margin-left:-260px;
+
+    transition: all ease-in-out .2s;
+}
+
+button {
+    width: 219px;
+    height: 66px;
+    border-radius: 15px;
+
+    text-decoration: none;
+    border: none;
+
+    font-family: "Work Sans";
+    font-size: 24px;
+
+    margin-top: 30px;
+    margin-right: 20px;
+
+    transition: all ease-in-out .2s;
+}
+
+/*
+Tag1, tag2 e todas as imagens da direita podem ser substituidas por uma só imagem
+*/
+
+.tag {
+    position: relative;
+    width: 256px;
+    height: 60px;
+
+    background-color: #685FD4;
+    color: white;
+    font-weight: 320;
+}
+
+#tag1 {
+    bottom: 200px;
+    margin-right: -20px;
+}
+
+#tag2 {
+    font-size: 18px;
+    bottom: 680px;
+    left: 180px;
+    height: 53px;
+    width: 252px;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.white {
+    background-color: white;
+    color: black;
+    border: solid 1px black;
+    font-weight: 500;
+}
+
+.cards {
+    width: 652px;
+    height: 118px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: white;
+    color: black;
+    border: solid 1px black;
+    border-radius: 20px;
+
+    margin-top: 70px;
+    padding: 8px;
+}
+
+.card {
+    width: 91px;
+    height: 70px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.cards img {
+    height: 24px;
+    width: 24px;
+}
+
+.cards p {
+    font-size: 16px;
+}
+
+button:hover, .smart:hover {
+    transform: scale(1.02);
+}

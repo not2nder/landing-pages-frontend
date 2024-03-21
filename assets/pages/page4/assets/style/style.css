@@ -1,0 +1,68 @@
+/* definindo a fonte (baixada) */
+@font-face {
+    font-family: 'Avenir';
+    src: url('../font/Avenir\ Regular.ttf');
+}
+
+body {
+    margin: 0;
+    display: flex;
+
+    background-color: #FFFFFF;
+}
+
+* {
+    font-family: 'Avenir', sans-serif;
+}
+
+/* width  = largura
+   height = altura
+ */
+.container {
+    width: 1440px;
+}
+
+.cols {
+    display: flex;
+}
+
+.right {
+    margin-left: 100px;
+}
+
+.text2 {
+    margin-top: 50px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 88px;
+    margin: 0;
+}
+
+h2 {
+    color: #414141;
+    margin: 0;
+}
+
+p {
+    font-size: 26px;
+    color: #252525;
+}
+
+button {
+    width: 158px;
+    height: 54px;
+    background-color: #252525;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}

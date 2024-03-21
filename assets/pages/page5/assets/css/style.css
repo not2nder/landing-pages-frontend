@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('../font/Avenir\ Regular.ttf');
+}
+
+* {
+    font-family: 'Avenir';
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 1300px;
+    height: 954px;
+}
+
+h1{
+    font-size: 88px;
+    color: #252525;
+    line-height: 115px;
+}
+
+h2 {
+    font-size: 32px;
+    color: #25252572;
+    margin: 0;
+}
+
+p {
+    font-size: 24px;
+    color: #252525c9;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.text {
+    width: 531px;
+    height: 208px;
+}
+
+.bottom {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.card {
+    width: 400px;
+    height: 549px;
+    margin-top: 10px;
+}
+

@@ -1,0 +1,105 @@
+.container {
+    display: flex;
+
+    margin: 40px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.left, .right {
+    width: 22vw;
+    margin-inline: 50px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.center img {
+    width: 300px;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 200;
+
+    margin: 0;
+}
+
+h1::selection {
+    background-color:#457D61;
+    color: white;
+}
+
+p::selection {
+    background-color: #252525;
+    color: white;
+}
+
+p {
+    font-size: 24px;
+    margin: 0;
+}
+
+.photo {
+    display: flex;
+    gap: 20px;
+}
+
+.photo img {
+    width: 170px;
+}
+
+button {
+    width: 177px;
+    height: 66px;
+
+    border: none;
+    border-radius: 66px;
+
+    background-color: #457D61;
+    color: white;
+    font-size: large;
+
+    margin-block: 20px;
+    cursor: pointer;
+
+    transition: all .2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.02);
+}
+
+button:active {
+    filter: brightness(1.2);
+}
+
+img {
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+img:hover {
+    transform: scale(1.03);
+    filter: brightness(1.05);
+}
