@@ -3,6 +3,10 @@
     src: url('../font/Avenir\ Regular.ttf');
 }
 
+html, body {
+    width: 100%;
+}
+
 * {
     font-family: 'Avenir';
 }
@@ -11,24 +15,23 @@ body {
     display: flex;
     flex-direction: column;
 
+    margin: 0;
+
     align-items: center;
     justify-content: center;
 }
 
 .container {
-    margin: 50px;
-}
-.left {
-    width: 637px;
+    margin: 40px;
 }
 
 h1 {
-    font-size: 72px;
+    font-size: 4.2rem;
     margin: 0;
 }
 
 p {
-    font-size: 26px;
+    font-size: 1.5em;
 }
 
 h1::selection, p::selection, button::selection {
@@ -38,8 +41,13 @@ h1::selection, p::selection, button::selection {
 
 .top {
     display: flex;
-
     justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+    .left {
+        width: 50%;
+    }
 }
 
 .cards {
@@ -83,4 +91,26 @@ button {
 img {
     -webkit-user-select: none;
     -webkit-user-drag: none;
+}
+
+@media (max-width:  768px){
+    .top {
+        flex-direction: column;
+    }
+
+    .left {
+        margin-bottom: 40px;
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        margin: 0;
+        padding-block: 40px;
+        padding-inline: 20px;
+    }
 }
